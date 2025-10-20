@@ -6,7 +6,17 @@
       "Bash(xcrun simctl boot:*)",
       "Bash(xcrun simctl launch:*)",
       "Bash(mkdir:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(tuist init:*)",
+      "Bash(tuist:*)",
+      "Bash(mv:*)",
+      "Bash(rmdir:*)",
+      "Bash(cp:*)",
+      "Bash(grep:*)",
+      "Bash(tree:*)",
+      "Bash(true)",
+      "Bash(xcrun simctl spawn:*)",
+      "Bash(xcrun simctl list:*)"
     ],
     "deny": [],
     "ask": [],

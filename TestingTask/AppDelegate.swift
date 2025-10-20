@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import Core
+import Auth
+import Home
+import Profile
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
