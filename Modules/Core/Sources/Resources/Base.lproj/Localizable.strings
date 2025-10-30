@@ -1,0 +1,10 @@
+/* SplashScreen */
+"splash.app_name" = "TestingTask";
+"splash.loading" = "Loading...";
+"splash.welcome" = "Welcome to TestingTask";
+
+/* Common */
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+"common.error" = "Error";
+"common.success" = "Success";

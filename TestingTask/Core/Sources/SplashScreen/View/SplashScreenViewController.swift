@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Core
 
 class SplashScreenViewController: UIViewController {
     
@@ -35,8 +36,8 @@ extension SplashScreenViewController: SplashScreenViewInput {
     }
     
     func showAppName() {
-        appNameLabel.text = "TestingTask"
-        
+        appNameLabel.text = L10n.Splash.appName
+
         UIView.animate(withDuration: 1.0) {
             self.appNameLabel.alpha = 1.0
             self.logoImageView.alpha = 1.0

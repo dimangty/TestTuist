@@ -32,6 +32,7 @@
 		447AE101536051E00006D021 /* LoginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D0334A1F8DCDB46E2FF35 /* LoginScreenPresenter.swift */; };
 		46EC8CB89873797EE7511B5A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C35ED867E393072662DAB /* Auth.swift */; };
 		47E5BF7D615F9D615FF9AFD9 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A4FF94BDC754B7B771535 /* ServiceLocator.swift */; };
+		4B2B0D1C0002369606EE54BE /* TuistStrings+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA39573B53951FBC049D999 /* TuistStrings+Core.swift */; };
 		4CAC7738DAF77BC4B088F710 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69314FFDABBFE0BB1FE74F4 /* SplashScreenPresenter.swift */; };
 		4F98570A05E764C7C4C0CE0E /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A55B23CF382ACBCC3A0B65 /* Profile.framework */; };
 		50FD82639D6BE78DD2FB0EB2 /* TuistBundle+TestingTaskDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217F40EA4159721546FCF392 /* TuistBundle+TestingTaskDev.swift */; };
@@ -75,6 +76,7 @@
 		892693CB5303FF06344A5BBA /* ProfileScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C7CB3C90340F44DD3372CF /* ProfileScreenViewController.xib */; };
 		8F7848D1308FE674E8C142C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA1F1DDBE793D0C0A426776 /* SceneDelegate.swift */; };
 		9317D43D2BF6148233B8388A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40359E55441BB5986611F0BD /* AppDelegate.swift */; };
+		9655CE14260740458BC0EF8D /* TuistBundle+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6CDB4930E2D07FF440EDF /* TuistBundle+Core.swift */; };
 		966B7A8FE5D50231C4578212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA037810C66DD350B2A5BE83 /* Assets.xcassets */; };
 		972B1A86B92EAC9C5BC56443 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892FF978EE0C8046557C45A /* HomeScreenRouter.swift */; };
 		9B7DB4183D041EE7C916C4EE /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21E8B36E9325A69E2B39F15A /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -112,9 +114,11 @@
 		E488F8014AF05A5BA1EEF90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CFE8E0A69244A7AFD56808 /* Main.storyboard */; };
 		E4DE77D14086D0A3D546F165 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21E8B36E9325A69E2B39F15A /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6BF6FBBF7A6E572614CA475 /* ProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAE0EDB2879F667DCCD632 /* ProfileScreenPresenter.swift */; };
+		F0C1E16D3E490C58C8026C9F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E306A3C9380DD7C62B16B1A /* Localizable.strings */; };
 		F26409F1951007534116BD9E /* CacheItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3756A950D008469D4435FB1A /* CacheItemModel.swift */; };
 		F8EFE1EEE118FBD20A8ED1B7 /* CommonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796080966CC12463A824B677 /* CommonAlertView.swift */; };
 		F938B67ED3B7D035CA4A1F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE974DE19C32137525AC34B0 /* LaunchScreen.storyboard */; };
+		FEB0BC6093287C099D4BFD6E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A56F3431144CBBB4B6B81 /* Strings.swift */; };
 		FFBFE5CB0D68696EE3B5848F /* LoginScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEAE052C425F49D7D02C08 /* LoginScreenRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -299,6 +303,7 @@
 		21E8B36E9325A69E2B39F15A /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E057CE94B913414B8EFA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26C7CB3C90340F44DD3372CF /* ProfileScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileScreenViewController.xib; sourceTree = "<group>"; };
+		29BD6D8D96F9E6D9CD0A0B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F729A981C69E5CBE0FE71D8 /* SignUpScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpScreenViewController.xib; sourceTree = "<group>"; };
 		30C42BC0D94CA46407DCFC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3174AEC9DA08CC9DD54A7FAD /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +354,7 @@
 		A2FF2407A2DCEB59E95F3CAB /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		A3284754A844AC6AE39A50CC /* TuistBundle+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Auth.swift"; sourceTree = "<group>"; };
 		A806484B8401AFEC01F8E24A /* Profile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Profile-Info.plist"; sourceTree = "<group>"; };
+		A89A56F3431144CBBB4B6B81 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		AA6CD917F63F6400D86BE2EC /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		AF1882E24B60E0D6D661EBD6 /* TuistBundle+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Profile.swift"; sourceTree = "<group>"; };
 		B4EA4047DE53E9D480F06126 /* SignUpScreenRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenRouterInput.swift; sourceTree = "<group>"; };
@@ -360,6 +366,7 @@
 		C4EE3EBF8E1BB1AF9CB7E5A6 /* HomeScreenRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouterInput.swift; sourceTree = "<group>"; };
 		C964C09ABAD70DD698FFA692 /* HomeScreenViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewOutput.swift; sourceTree = "<group>"; };
 		CA7311862B8916D6BBAA8A32 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		CAA39573B53951FBC049D999 /* TuistStrings+Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistStrings+Core.swift"; sourceTree = "<group>"; };
 		CACCE3AEB4E8EA8FC70280E3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CAE8552F4658225B36A861CF /* TuistBundle+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Home.swift"; sourceTree = "<group>"; };
 		D129717C698100596F9324B0 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
@@ -368,6 +375,7 @@
 		DA24A297CA5923FDD55139C6 /* TestingTaskSand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingTaskSand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC710489B4BDED91B9FE1F3 /* ErrorServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorServiceDelegate.swift; sourceTree = "<group>"; };
 		E0DCD5FB9B3024040894F358 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E3C6CDB4930E2D07FF440EDF /* TuistBundle+Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Core.swift"; sourceTree = "<group>"; };
 		E6FAE0EDB2879F667DCCD632 /* ProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenPresenter.swift; sourceTree = "<group>"; };
 		E7C723E942FE7DC4BD6ED4C2 /* CurrencyRatesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesDTO.swift; sourceTree = "<group>"; };
 		EBA8EBCA2DB0FC1D9971F197 /* SignUpScreenViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenViewInput.swift; sourceTree = "<group>"; };
@@ -574,10 +582,12 @@
 				9B0902F47A7BA72AC86A06AA /* TuistAssets+TestingTaskDev.swift */,
 				4C31461E6FFCF9954230E607 /* TuistAssets+TestingTaskSand.swift */,
 				A3284754A844AC6AE39A50CC /* TuistBundle+Auth.swift */,
+				E3C6CDB4930E2D07FF440EDF /* TuistBundle+Core.swift */,
 				CAE8552F4658225B36A861CF /* TuistBundle+Home.swift */,
 				AF1882E24B60E0D6D661EBD6 /* TuistBundle+Profile.swift */,
 				217F40EA4159721546FCF392 /* TuistBundle+TestingTaskDev.swift */,
 				5596616E36971277DA9EF384 /* TuistBundle+TestingTaskSand.swift */,
+				CAA39573B53951FBC049D999 /* TuistStrings+Core.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -617,7 +627,9 @@
 			isa = PBXGroup;
 			children = (
 				7E746586A9EB22F7C0692B8F /* Common */,
+				F8FC83E777CEC5E8C5467AB7 /* Generated */,
 				8B1B7BE3DD8AA47D997C4B9F /* Models */,
+				CA4C9F4D192415ADABD8FD18 /* Resources */,
 				A2D8EFF1411F62EA67310CFA /* Services */,
 				7E2DDDAAD59633110BE65C5F /* Configurator.swift */,
 				54BDB96875F81E6567FA5E80 /* Core.swift */,
@@ -884,6 +896,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		CA4C9F4D192415ADABD8FD18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E306A3C9380DD7C62B16B1A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CED0CF0986BAE4F4715C3305 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -936,6 +956,14 @@
 				BA4792C589C0919ACD5A98E6 /* Sources */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F8FC83E777CEC5E8C5467AB7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A89A56F3431144CBBB4B6B81 /* Strings.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		FB0E1237F7496471841B39B8 /* Router */ = {
@@ -1150,6 +1178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C1E16D3E490C58C8026C9F /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1190,7 +1219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n  echo \"SwiftGen is available, but no assets configured yet\"\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi";
+			shellScript = "cd \"$SRCROOT/Modules/Core\"\nif which swiftgen >/dev/null; then\n  swiftgen config run\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1211,6 +1240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9655CE14260740458BC0EF8D /* TuistBundle+Core.swift in Sources */,
+				4B2B0D1C0002369606EE54BE /* TuistStrings+Core.swift in Sources */,
 				3CE40AC4676E7063712772D2 /* UIAlertController+Styles.swift in Sources */,
 				7275FE65F62B24CDC049C6D6 /* UIView+Constraints.swift in Sources */,
 				6F381A13BA1382A6D9C74438 /* UIView+Xib.swift in Sources */,
@@ -1219,6 +1250,7 @@
 				538010AED2DCB928F8D2AC88 /* ViperModuleTransitionHandler.swift in Sources */,
 				0B905FEBDCA0C7F2D86CECD1 /* Configurator.swift in Sources */,
 				77B8F293BE5BD233E8AA3B2C /* Core.swift in Sources */,
+				FEB0BC6093287C099D4BFD6E /* Strings.swift in Sources */,
 				D68206C1F5E9A6CCA8CE4026 /* Injected.swift in Sources */,
 				59025DDA4CAAA0F161ECB29A /* CurrencyListDTO.swift in Sources */,
 				5D7BF8BF288E536C9632B82E /* CurrencyRatesDTO.swift in Sources */,
@@ -1406,6 +1438,14 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		9E306A3C9380DD7C62B16B1A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29BD6D8D96F9E6D9CD0A0B6E /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BE974DE19C32137525AC34B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1556,6 +1596,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFPP3AWX8N;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/TestingTaskSand-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1653,6 +1695,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFPP3AWX8N;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/TestingTaskDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1835,6 +1879,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFPP3AWX8N;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/TestingTaskDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1865,6 +1911,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFPP3AWX8N;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/TestingTaskSand-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

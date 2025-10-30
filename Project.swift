@@ -11,11 +11,13 @@ let project = Project(
             bundleId: "com.my.TestingTask.Core",
             deploymentTargets: .iOS("15.0"),
             sources: ["Modules/Core/Sources/**"],
+            resources: ["Modules/Core/Sources/Resources/**"],
             scripts: [
                 .pre(
                     script: """
+                    cd "$SRCROOT/Modules/Core"
                     if which swiftgen >/dev/null; then
-                      echo "SwiftGen is available, but no assets configured yet"
+                      swiftgen config run
                     else
                       echo "warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen"
                     fi
@@ -108,7 +110,13 @@ let project = Project(
                 .target(name: "Auth"),
                 .target(name: "Home"),
                 .target(name: "Profile")
-            ]
+            ],
+            settings: .settings(
+                base: [
+                    "CODE_SIGN_STYLE": "Automatic",
+                    "DEVELOPMENT_TEAM": "HFPP3AWX8N"
+                ]
+            )
         ),
 
         // MARK: - Sand App Target
@@ -151,7 +159,11 @@ let project = Project(
                 .target(name: "Profile")
             ],
             settings: .settings(
-                base: ["SWIFT_ACTIVE_COMPILATION_CONDITIONS": "SAND"]
+                base: [
+                    "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "SAND",
+                    "CODE_SIGN_STYLE": "Automatic",
+                    "DEVELOPMENT_TEAM": "HFPP3AWX8N"
+                ]
             )
         )
     ],
