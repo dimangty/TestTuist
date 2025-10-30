@@ -11,6 +11,18 @@ let project = Project(
             bundleId: "com.my.TestingTask.Core",
             deploymentTargets: .iOS("15.0"),
             sources: ["Modules/Core/Sources/**"],
+            scripts: [
+                .pre(
+                    script: """
+                    if which swiftgen >/dev/null; then
+                      echo "SwiftGen is available, but no assets configured yet"
+                    else
+                      echo "warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen"
+                    fi
+                    """,
+                    name: "SwiftGen"
+                )
+            ],
             dependencies: []
         ),
         
@@ -58,12 +70,12 @@ let project = Project(
             ]
         ),
         
-        // MARK: - Main App Target
+        // MARK: - Dev App Target
         .target(
-            name: "TestingTask",
+            name: "TestingTaskDev",
             destinations: .iOS,
             product: .app,
-            bundleId: "com.my.TestingTask",
+            bundleId: "com.my.TestingTask.dev",
             deploymentTargets: .iOS("15.0"),
             infoPlist: .extendingDefault(
                 with: [
@@ -88,7 +100,7 @@ let project = Project(
                 "TestingTask/ViewController.swift"
             ],
             resources: [
-                "TestingTask/**/*.storyboard", 
+                "TestingTask/**/*.storyboard",
                 "TestingTask/Assets.xcassets"
             ],
             dependencies: [
@@ -97,16 +109,69 @@ let project = Project(
                 .target(name: "Home"),
                 .target(name: "Profile")
             ]
+        ),
+
+        // MARK: - Sand App Target
+        .target(
+            name: "TestingTaskSand",
+            destinations: .iOS,
+            product: .app,
+            bundleId: "com.my.TestingTask.sand",
+            deploymentTargets: .iOS("15.0"),
+            infoPlist: .extendingDefault(
+                with: [
+                    "UILaunchStoryboardName": "LaunchScreen",
+                    "UIMainStoryboardFile": "Main",
+                    "UISupportedInterfaceOrientations": [
+                        "UIInterfaceOrientationPortrait",
+                        "UIInterfaceOrientationLandscapeLeft",
+                        "UIInterfaceOrientationLandscapeRight"
+                    ],
+                    "UISupportedInterfaceOrientations~ipad": [
+                        "UIInterfaceOrientationPortrait",
+                        "UIInterfaceOrientationPortraitUpsideDown",
+                        "UIInterfaceOrientationLandscapeLeft",
+                        "UIInterfaceOrientationLandscapeRight"
+                    ]
+                ]
+            ),
+            sources: [
+                "TestingTask/AppDelegate.swift",
+                "TestingTask/SceneDelegate.swift",
+                "TestingTask/ViewController.swift"
+            ],
+            resources: [
+                "TestingTask/**/*.storyboard",
+                "TestingTask/Assets.xcassets"
+            ],
+            dependencies: [
+                .target(name: "Core"),
+                .target(name: "Auth"),
+                .target(name: "Home"),
+                .target(name: "Profile")
+            ],
+            settings: .settings(
+                base: ["SWIFT_ACTIVE_COMPILATION_CONDITIONS": "SAND"]
+            )
         )
     ],
     schemes: [
         .scheme(
-            name: "TestingTask",
+            name: "TestingTaskDev",
             shared: true,
-            buildAction: .buildAction(targets: ["TestingTask"]),
-            runAction: .runAction(configuration: .debug, executable: "TestingTask"),
+            buildAction: .buildAction(targets: ["TestingTaskDev"]),
+            runAction: .runAction(configuration: .debug, executable: "TestingTaskDev"),
             archiveAction: .archiveAction(configuration: .release),
-            profileAction: .profileAction(configuration: .release, executable: "TestingTask"),
+            profileAction: .profileAction(configuration: .release, executable: "TestingTaskDev"),
+            analyzeAction: .analyzeAction(configuration: .debug)
+        ),
+        .scheme(
+            name: "TestingTaskSand",
+            shared: true,
+            buildAction: .buildAction(targets: ["TestingTaskSand"]),
+            runAction: .runAction(configuration: .debug, executable: "TestingTaskSand"),
+            archiveAction: .archiveAction(configuration: .release),
+            profileAction: .profileAction(configuration: .release, executable: "TestingTaskSand"),
             analyzeAction: .analyzeAction(configuration: .debug)
         )
     ]

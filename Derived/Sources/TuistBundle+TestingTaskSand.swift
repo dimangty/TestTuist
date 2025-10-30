@@ -11,12 +11,12 @@ import Foundation
 // MARK: - Swift Bundle Accessor for Frameworks
 private class BundleFinder {}
 extension Foundation.Bundle {
-/// Since Profile is a dynamic framework, the bundle for classes within this module can be used directly.
+/// Since TestingTaskSand is a application, the bundle for classes within this module can be used directly.
     static let module = Bundle(for: BundleFinder.self)
 }
 // MARK: - Objective-C Bundle Accessor
 @objc
-public final class ProfileResources: NSObject {
+public final class TestingTaskSandResources: NSObject {
 @objc public class var bundle: Bundle {
     return .module
 }

@@ -70,9 +70,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "415CF3EC3AD2C3C9D05872DF"
-               BuildableName = "TestingTask.app"
-               BlueprintName = "TestingTask"
+               BlueprintIdentifier = "31CEB5D26EFB28DB22A1D133"
+               BuildableName = "TestingTaskDev.app"
+               BlueprintName = "TestingTaskDev"
+               ReferencedContainer = "container:TestingTask.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "519E54B35757DA6CE34F381D"
+               BuildableName = "TestingTaskSand.app"
+               BlueprintName = "TestingTaskSand"
                ReferencedContainer = "container:TestingTask.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

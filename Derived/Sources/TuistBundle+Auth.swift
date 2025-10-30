@@ -16,7 +16,7 @@ extension Foundation.Bundle {
 }
 // MARK: - Objective-C Bundle Accessor
 @objc
-public class AuthResources: NSObject {
+public final class AuthResources: NSObject {
 @objc public class var bundle: Bundle {
     return .module
 }

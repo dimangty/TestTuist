@@ -4,28 +4,41 @@
 // swiftformat:disable all
 // Generated using tuist — https://github.com/tuist/tuist
 
+
+
 #if os(macOS)
-  import AppKit
-#elseif os(iOS)
-  import UIKit
-#elseif os(tvOS) || os(watchOS)
-  import UIKit
+#if hasFeature(InternalImportsByDefault)
+public import AppKit
+#else
+import AppKit
 #endif
+#else
+#if hasFeature(InternalImportsByDefault)
+public import UIKit
+#else
+import UIKit
+#endif
+#endif
+
 #if canImport(SwiftUI)
-  import SwiftUI
+#if hasFeature(InternalImportsByDefault)
+public import SwiftUI
+#else
+import SwiftUI
+#endif
 #endif
 
 // MARK: - Asset Catalogs
 
-public enum TestingTaskAsset: Sendable {
-  public static let accentColor = TestingTaskColors(name: "AccentColor")
-  public static let currencyOffIcon = TestingTaskImages(name: "CurrencyOffIcon")
-  public static let currencyOnIcon = TestingTaskImages(name: "CurrencyOnIcon")
+public enum TestingTaskSandAsset: Sendable {
+  public static let accentColor = TestingTaskSandColors(name: "AccentColor")
+  public static let currencyOffIcon = TestingTaskSandImages(name: "CurrencyOffIcon")
+  public static let currencyOnIcon = TestingTaskSandImages(name: "CurrencyOnIcon")
 }
 
 // MARK: - Implementation Details
 
-public final class TestingTaskColors: Sendable {
+public final class TestingTaskSandColors: Sendable {
   public let name: String
 
   #if os(macOS)
@@ -54,9 +67,9 @@ public final class TestingTaskColors: Sendable {
   }
 }
 
-public extension TestingTaskColors.Color {
+public extension TestingTaskSandColors.Color {
   @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, visionOS 1.0, *)
-  convenience init?(asset: TestingTaskColors) {
+  convenience init?(asset: TestingTaskSandColors) {
     let bundle = Bundle.module
     #if os(iOS) || os(tvOS) || os(visionOS)
     self.init(named: asset.name, in: bundle, compatibleWith: nil)
@@ -71,14 +84,14 @@ public extension TestingTaskColors.Color {
 #if canImport(SwiftUI)
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, visionOS 1.0, *)
 public extension SwiftUI.Color {
-  init(asset: TestingTaskColors) {
+  init(asset: TestingTaskSandColors) {
     let bundle = Bundle.module
     self.init(asset.name, bundle: bundle)
   }
 }
 #endif
 
-public struct TestingTaskImages: Sendable {
+public struct TestingTaskSandImages: Sendable {
   public let name: String
 
   #if os(macOS)
@@ -113,17 +126,17 @@ public struct TestingTaskImages: Sendable {
 #if canImport(SwiftUI)
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, visionOS 1.0, *)
 public extension SwiftUI.Image {
-  init(asset: TestingTaskImages) {
+  init(asset: TestingTaskSandImages) {
     let bundle = Bundle.module
     self.init(asset.name, bundle: bundle)
   }
 
-  init(asset: TestingTaskImages, label: Text) {
+  init(asset: TestingTaskSandImages, label: Text) {
     let bundle = Bundle.module
     self.init(asset.name, bundle: bundle, label: label)
   }
 
-  init(decorative asset: TestingTaskImages) {
+  init(decorative asset: TestingTaskSandImages) {
     let bundle = Bundle.module
     self.init(decorative: asset.name, bundle: bundle)
   }

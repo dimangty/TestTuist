@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "415CF3EC3AD2C3C9D05872DF"
-               BuildableName = "TestingTask.app"
-               BlueprintName = "TestingTask"
+               BlueprintIdentifier = "31CEB5D26EFB28DB22A1D133"
+               BuildableName = "TestingTaskDev.app"
+               BlueprintName = "TestingTaskDev"
                ReferencedContainer = "container:TestingTask.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "415CF3EC3AD2C3C9D05872DF"
-            BuildableName = "TestingTask.app"
-            BlueprintName = "TestingTask"
+            BlueprintIdentifier = "31CEB5D26EFB28DB22A1D133"
+            BuildableName = "TestingTaskDev.app"
+            BlueprintName = "TestingTaskDev"
             ReferencedContainer = "container:TestingTask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,9 +62,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "415CF3EC3AD2C3C9D05872DF"
-            BuildableName = "TestingTask.app"
-            BlueprintName = "TestingTask"
+            BlueprintIdentifier = "31CEB5D26EFB28DB22A1D133"
+            BuildableName = "TestingTaskDev.app"
+            BlueprintName = "TestingTaskDev"
             ReferencedContainer = "container:TestingTask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
