@@ -6,6 +6,7 @@ This iOS project has been successfully migrated to use Tuist with a modular arch
 
 The project is now split into the following modules:
 
+
 ### 🏗️ **Core Module**
 - **Purpose**: Shared foundation components
 - **Contents**:
