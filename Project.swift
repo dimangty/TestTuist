@@ -2,6 +2,12 @@ import ProjectDescription
 
 let project = Project(
     name: "TestingTask",
+    packages: [
+        .remote(
+            url: "https://github.com/firebase/firebase-ios-sdk",
+            requirement: .upToNextMajor(from: "10.18.0")
+        )
+    ],
     targets: [
         // MARK: - Core Module
         .target(
@@ -25,7 +31,10 @@ let project = Project(
                     name: "SwiftGen"
                 )
             ],
-            dependencies: []
+            dependencies: [
+                .package(product: "FirebaseAnalytics"),
+                .package(product: "FirebaseMessaging")
+            ]
         ),
         
         // MARK: - Auth Module
